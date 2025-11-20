@@ -15,14 +15,6 @@ COMMON_HEADER_FIELDS_AU: List[HeaderField] = [
     {"key": "issued_by", "label": "Issued By"},
 ]
 
-COMMON_CHARGE_COLUMNS: List[ChargeColumn] = [
-    {"key": "description", "label": "Charge Item"},
-    {"key": "currency", "label": "Currency"},
-    {"key": "unit", "label": "Unit"},
-    {"key": "rate", "label": "Rate"},
-    {"key": "min", "label": "Minimum"},
-]
-
 
 def build_au_title(template_code: str, mode: str) -> str:
     mapping = {
@@ -47,7 +39,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "incoterm", "label": "Incoterm"},
             {"key": "validity_date", "label": "Validity Date"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
             {"key": "ORIGIN_CFS_HANDLING", "label": "Origin CFS Handling"},
@@ -66,7 +64,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "incoterm", "label": "Incoterm"},
             {"key": "validity_date", "label": "Validity Date"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "AIR_FREIGHT", "label": "Air Freight"},
             {"key": "FUEL_SURCHARGE", "label": "Fuel Surcharge"},
@@ -85,7 +89,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "incoterm", "label": "Incoterm"},
             {"key": "validity_date", "label": "Validity Date"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
             {"key": "ORIGIN_TERMINAL", "label": "Origin Terminal Handling"},
@@ -104,7 +114,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "incoterm", "label": "Incoterm"},
             {"key": "validity_date", "label": "Validity Date"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
             {"key": "ORIGIN_CFS_HANDLING", "label": "Origin CFS Handling"},
@@ -123,7 +139,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "incoterm", "label": "Incoterm"},
             {"key": "validity_date", "label": "Validity Date"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
             {"key": "ORIGIN_TERMINAL", "label": "Origin Terminal Handling"},
@@ -142,7 +164,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "incoterm", "label": "Incoterm"},
             {"key": "validity_date", "label": "Validity Date"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "AIR_FREIGHT", "label": "Air Freight"},
             {"key": "FUEL_SURCHARGE", "label": "Fuel Surcharge"},
@@ -160,7 +188,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "destination", "label": "Destination"},
             {"key": "incoterm", "label": "Incoterm"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "FREIGHT_CHARGE", "label": "Freight Charge"},
             {"key": "DEST_PORT_SERVICE", "label": "Destination Port Service"},
@@ -178,7 +212,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "destination", "label": "Destination"},
             {"key": "incoterm", "label": "Incoterm"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
             {"key": "DEST_CFS", "label": "Destination CFS Handling"},
@@ -196,7 +236,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "destination", "label": "Destination"},
             {"key": "incoterm", "label": "Incoterm"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "TRUCKING", "label": "Pickup/Trucking"},
             {"key": "ORIGIN_CFS_HANDLING", "label": "Origin CFS Handling"},
@@ -214,7 +260,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "destination", "label": "Destination"},
             {"key": "incoterm", "label": "Incoterm"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "TRUCKING", "label": "Pickup/Trucking"},
             {"key": "AIR_FREIGHT", "label": "Air Freight"},
@@ -232,7 +284,13 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "destination", "label": "Destination"},
             {"key": "incoterm", "label": "Incoterm"},
         ],
-        "charge_columns": COMMON_CHARGE_COLUMNS,
+        "charge_columns": [
+            {"key": "description", "label": "Charge Item"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "unit", "label": "Unit"},
+            {"key": "rate", "label": "Rate"},
+            {"key": "min", "label": "Minimum"},
+        ],
         "charges": [
             {"key": "TRUCKING", "label": "Pickup/Trucking"},
             {"key": "ORIGIN_TERMINAL", "label": "Origin Terminal Handling"},

@@ -302,12 +302,16 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
-            {"key": "DEST_CFS", "label": "Destination CFS Handling"},
-            {"key": "DO_FEE", "label": "Delivery Order Fee"},
-            {"key": "DEST_TRUCKING", "label": "Destination Trucking"},
-            {"key": "OTHER_SURCHARGES", "label": "Other Surcharges"},
+        "charge_sections": [
+            {
+                "title": "Destination Charges",
+                "rows": [
+                    {"key": "DEST_CFS", "label": "Destination CFS Handling"},
+                    {"key": "DO_FEE", "label": "Delivery Order Fee"},
+                    {"key": "DEST_TRUCKING", "label": "Destination Trucking"},
+                    {"key": "OTHER_SURCHARGES", "label": "Other Surcharges"},
+                ],
+            },
         ],
     },
     TemplateCode.AGENT_EXP_LCL_EXW: {
@@ -326,12 +330,20 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "TRUCKING", "label": "Pickup/Trucking"},
-            {"key": "ORIGIN_CFS_HANDLING", "label": "Origin CFS Handling"},
-            {"key": "DOC_FEE", "label": "Documentation Fee"},
-            {"key": "PORT_CHARGES", "label": "Port Charges"},
-            {"key": "OTHER_SURCHARGES", "label": "Other Surcharges"},
+        "charge_sections": [
+            {
+                "title": "Origin Charges",
+                "rows": [
+                    {"key": "TRUCKING", "label": "Pickup/Trucking"},
+                    {"key": "ORIGIN_CFS_HANDLING", "label": "Origin CFS Handling"},
+                    {"key": "DOC_FEE", "label": "Documentation Fee"},
+                    {"key": "PORT_CHARGES", "label": "Port Charges"},
+                ],
+            },
+            {
+                "title": "Freight Charges",
+                "rows": [],
+            },
         ],
     },
     TemplateCode.AGENT_EXP_AIR_EXW: {
@@ -350,12 +362,21 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "TRUCKING", "label": "Pickup/Trucking"},
-            {"key": "AIR_FREIGHT", "label": "Air Freight"},
-            {"key": "FUEL_SURCHARGE", "label": "Fuel Surcharge"},
-            {"key": "HANDLING_FEE", "label": "Handling Fee"},
-            {"key": "OTHER_SURCHARGES", "label": "Other Surcharges"},
+        "charge_sections": [
+            {
+                "title": "Origin Charges",
+                "rows": [
+                    {"key": "TRUCKING", "label": "Pickup/Trucking"},
+                    {"key": "HANDLING_FEE", "label": "Handling Fee"},
+                ],
+            },
+            {
+                "title": "Freight Charges",
+                "rows": [
+                    {"key": "AIR_FREIGHT", "label": "Air Freight"},
+                    {"key": "FUEL_SURCHARGE", "label": "Fuel Surcharge"},
+                ],
+            },
         ],
     },
     TemplateCode.AGENT_EXP_FCL: {

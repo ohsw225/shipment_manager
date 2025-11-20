@@ -46,12 +46,27 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
-            {"key": "ORIGIN_CFS_HANDLING", "label": "Origin CFS Handling"},
-            {"key": "DEST_PORT_SERVICE", "label": "Destination Port Service"},
-            {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
-            {"key": "DEST_DELIVERY_ORDER", "label": "Destination Delivery Order"},
+        "charge_sections": [
+            {
+                "title": "Origin Charges",
+                "rows": [
+                    {"key": "ORIGIN_CFS_HANDLING", "label": "Origin CFS Handling"},
+                ],
+            },
+            {
+                "title": "Freight Charges",
+                "rows": [
+                    {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
+                ],
+            },
+            {
+                "title": "Destination Charges",
+                "rows": [
+                    {"key": "DEST_PORT_SERVICE", "label": "Destination Port Service"},
+                    {"key": "DEST_DELIVERY_ORDER", "label": "Destination Delivery Order"},
+                    {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
+                ],
+            },
         ],
     },
     TemplateCode.IMP_AIR: {
@@ -71,12 +86,27 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "AIR_FREIGHT", "label": "Air Freight"},
-            {"key": "FUEL_SURCHARGE", "label": "Fuel Surcharge"},
-            {"key": "SECURITY_FEE", "label": "Security Fee"},
-            {"key": "TERMINAL_FEE", "label": "Terminal/Handling Fee"},
-            {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
+        "charge_sections": [
+            {
+                "title": "Origin Charges",
+                "rows": [
+                    {"key": "SECURITY_FEE", "label": "Security Fee"},
+                    {"key": "TERMINAL_FEE", "label": "Terminal/Handling Fee"},
+                ],
+            },
+            {
+                "title": "Freight Charges",
+                "rows": [
+                    {"key": "AIR_FREIGHT", "label": "Air Freight"},
+                    {"key": "FUEL_SURCHARGE", "label": "Fuel Surcharge"},
+                ],
+            },
+            {
+                "title": "Destination Charges",
+                "rows": [
+                    {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
+                ],
+            },
         ],
     },
     TemplateCode.IMP_FCL: {
@@ -96,12 +126,27 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
-            {"key": "ORIGIN_TERMINAL", "label": "Origin Terminal Handling"},
-            {"key": "DEST_PORT_SERVICE", "label": "Destination Port Service"},
-            {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
-            {"key": "DEST_DELIVERY_ORDER", "label": "Destination Delivery Order"},
+        "charge_sections": [
+            {
+                "title": "Origin Charges",
+                "rows": [
+                    {"key": "ORIGIN_TERMINAL", "label": "Origin Terminal Handling"},
+                ],
+            },
+            {
+                "title": "Freight Charges",
+                "rows": [
+                    {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
+                ],
+            },
+            {
+                "title": "Destination Charges",
+                "rows": [
+                    {"key": "DEST_PORT_SERVICE", "label": "Destination Port Service"},
+                    {"key": "DEST_DELIVERY_ORDER", "label": "Destination Delivery Order"},
+                    {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
+                ],
+            },
         ],
     },
     TemplateCode.EXP_LCL: {
@@ -121,12 +166,21 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
-            {"key": "ORIGIN_CFS_HANDLING", "label": "Origin CFS Handling"},
-            {"key": "BUNKER_ADJ", "label": "Bunker Adjustment"},
-            {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
-            {"key": "DEST_CHARGES", "label": "Destination Charges"},
+        "charge_sections": [
+            {
+                "title": "Origin Charges",
+                "rows": [
+                    {"key": "ORIGIN_CFS_HANDLING", "label": "Origin CFS Handling"},
+                    {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
+                ],
+            },
+            {
+                "title": "Freight Charges",
+                "rows": [
+                    {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
+                    {"key": "BUNKER_ADJ", "label": "Bunker Adjustment"},
+                ],
+            },
         ],
     },
     TemplateCode.EXP_FCL: {
@@ -146,12 +200,27 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
-            {"key": "ORIGIN_TERMINAL", "label": "Origin Terminal Handling"},
-            {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
-            {"key": "BUNKER_ADJ", "label": "Bunker Adjustment"},
-            {"key": "DEST_CHARGES", "label": "Destination Charges"},
+        "charge_sections": [
+            {
+                "title": "Origin Charges",
+                "rows": [
+                    {"key": "ORIGIN_TERMINAL", "label": "Origin Terminal Handling"},
+                    {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
+                ],
+            },
+            {
+                "title": "Freight Charges",
+                "rows": [
+                    {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
+                    {"key": "BUNKER_ADJ", "label": "Bunker Adjustment"},
+                ],
+            },
+            {
+                "title": "Destination Charges",
+                "rows": [
+                    {"key": "DEST_CHARGES", "label": "Destination Charges"},
+                ],
+            },
         ],
     },
     TemplateCode.EXP_AIR: {
@@ -171,17 +240,27 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "AIR_FREIGHT", "label": "Air Freight"},
-            {"key": "FUEL_SURCHARGE", "label": "Fuel Surcharge"},
-            {"key": "SECURITY_FEE", "label": "Security Fee"},
-            {"key": "HANDLING_FEE", "label": "Handling Fee"},
-            {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
+        "charge_sections": [
+            {
+                "title": "Origin Charges",
+                "rows": [
+                    {"key": "HANDLING_FEE", "label": "Handling Fee"},
+                    {"key": "SECURITY_FEE", "label": "Security Fee"},
+                    {"key": "DOCUMENTATION_FEE", "label": "Documentation Fee"},
+                ],
+            },
+            {
+                "title": "Freight Charges",
+                "rows": [
+                    {"key": "AIR_FREIGHT", "label": "Air Freight"},
+                    {"key": "FUEL_SURCHARGE", "label": "Fuel Surcharge"},
+                ],
+            },
         ],
     },
-    TemplateCode.AGENT_IMP_FCL_DAP: {
+    TemplateCode.AGENT_IMP_FCL: {
         "branch": Branch.AUSTRALIA,
-        "title": "Agent Import FCL DAP Charge",
+        "title": "Agent Import FCL Charge",
         "header_fields": COMMON_HEADER_FIELDS_AU
         + [
             {"key": "origin", "label": "Origin"},
@@ -195,12 +274,16 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "FREIGHT_CHARGE", "label": "Freight Charge"},
-            {"key": "DEST_PORT_SERVICE", "label": "Destination Port Service"},
-            {"key": "DO_FEE", "label": "Delivery Order Fee"},
-            {"key": "DEST_TRUCKING", "label": "Destination Trucking"},
-            {"key": "OTHER_SURCHARGES", "label": "Other Surcharges"},
+        "charge_sections": [
+            {
+                "title": "Destination Charges",
+                "rows": [
+                    {"key": "DEST_PORT_SERVICE", "label": "Destination Port Service"},
+                    {"key": "DO_FEE", "label": "Delivery Order Fee"},
+                    {"key": "DEST_TRUCKING", "label": "Destination Trucking"},
+                    {"key": "OTHER_SURCHARGES", "label": "Other Surcharges"},
+                ],
+            },
         ],
     },
     TemplateCode.AGENT_IMP_LCL_DAP: {
@@ -291,12 +374,21 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
             {"key": "rate", "label": "Rate"},
             {"key": "min", "label": "Minimum"},
         ],
-        "charges": [
-            {"key": "TRUCKING", "label": "Pickup/Trucking"},
-            {"key": "ORIGIN_TERMINAL", "label": "Origin Terminal Handling"},
-            {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
-            {"key": "DOC_FEE", "label": "Documentation Fee"},
-            {"key": "OTHER_SURCHARGES", "label": "Other Surcharges"},
+        "charge_sections": [
+            {
+                "title": "Origin Charges",
+                "rows": [
+                    {"key": "TRUCKING", "label": "Pickup/Trucking"},
+                    {"key": "ORIGIN_TERMINAL", "label": "Origin Terminal Handling"},
+                    {"key": "DOC_FEE", "label": "Documentation Fee"},
+                ],
+            },
+            {
+                "title": "Freight Charges",
+                "rows": [
+                    {"key": "OCEAN_FREIGHT", "label": "Ocean Freight"},
+                ],
+            },
         ],
     },
 }

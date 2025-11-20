@@ -1,0 +1,9 @@
+-r requirements.in
+
+black>=24.8
+isort>=5.13
+ruff>=0.6
+mypy>=1.11
+pytest>=8.2
+pytest-django>=4.8
+pre-commit>=3.7

@@ -1,0 +1,43 @@
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+force_single_line = false
+combine_as_imports = true
+known_first_party = ["logistics_manager", "core", "shipments", "quotes"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+select = [
+    "E",
+    "F",
+    "I",
+    "B",
+    "W",
+    "UP",
+    "N",
+    "DJ",
+]
+ignore = ["D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107"]
+exclude = ["migrations"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+strict_optional = true
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "logistics_manager.settings"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+addopts = "-ra"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]

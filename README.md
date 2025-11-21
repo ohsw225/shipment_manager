@@ -10,7 +10,8 @@ Internal Django web app for managing quotes and shipments across Korea (KR) and 
 - Dependencies listed in `requirements.in` and `requirements-dev.in`; no virtualenv or installs yet.
 - Core domain enums/constants added (`core/choices.py`, `constants.py`, `permissions.py`, `utils.py`).
 - `Shipment` model scaffolded with branch/status/template, quote JSON/PDF fields, and owner references (no migrations run yet).
-- AU quote template configs defined for 11 templates (IMP LCL/AIR/FCL, EXP LCL/FCL/AIR, AGENT IMP FCL/LCL DAP, AGENT EXP LCL EXW, AGENT EXP AIR EXW, AGENT EXP FCL); KR configs empty for now. Registry is in `quotes/registry.py`.
+- AU quote template configs defined for 11 templates (IMP LCL/AIR/FCL, EXP LCL/FCL/AIR, AGENT IMP FCL, AGENT IMP LCL DAP Charge, AGENT EXP LCL EXW Charge, AGENT EXP AIR EXW Charge, AGENT EXP FCL) with per-template charge sections and shared shipment detail headers (port of loading/destination, shipment details text, incoterms, frequency, transit time); KR configs empty for now. Registry is in `quotes/registry.py`.
+- Untracked file present: `data.json` (contents/intent unknown).
 
 ## Getting Started (fresh clone)
 1. Create virtualenv (Python 3.12) and install deps:

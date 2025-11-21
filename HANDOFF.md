@@ -10,7 +10,8 @@ This repo is a fresh Django scaffold for the Logistics Manager app (quotes → s
 - Dependency manifests: `requirements.in`, `requirements-dev.in` (Django, environ, fpdf2, storages[boto3], psycopg2-binary, dev tools).
 - Core layer: enums/constants/permissions/utils in `core/` (`choices.py`, `constants.py`, `permissions.py`, `utils.py`).
 - `Shipment` model defined with branch/status/template, customer/route fields, `quote_json`, `quote_pdf`, owner, timestamps (migrations not run yet).
-- Quote configs: AU-only templates for 11 codes (IMP LCL/AIR/FCL, EXP LCL/FCL/AIR, AGENT IMP FCL/LCL DAP, AGENT EXP LCL EXW, AGENT EXP AIR EXW, AGENT EXP FCL) in `quotes/template_configs_au.py`; registry at `quotes/registry.py`; KR config file empty.
+- Quote configs: AU-only templates for 11 codes (IMP LCL/AIR/FCL, EXP LCL/FCL/AIR, AGENT IMP FCL, AGENT IMP LCL DAP Charge, AGENT EXP LCL EXW Charge, AGENT EXP AIR EXW Charge, AGENT EXP FCL) in `quotes/template_configs_au.py` with per-template charge sections (origin/freight/destination as needed) and shared shipment detail headers (port of loading/destination, shipment details, incoterms, frequency, transit time). Registry at `quotes/registry.py`; KR config file empty.
+- Untracked file noted: `data.json` (purpose unknown).
 
 ## Immediate Next Steps
 1) Add `.env.example` with `SECRET_KEY`, `DEBUG`, `DATABASE_URL`, `ALLOWED_HOSTS`, `USE_S3` placeholders.

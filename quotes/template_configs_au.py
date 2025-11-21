@@ -15,6 +15,19 @@ COMMON_HEADER_FIELDS_AU: List[HeaderField] = [
     {"key": "issued_by", "label": "Issued By"},
 ]
 
+COMMON_SHIPMENT_DETAILS_FIELDS: List[HeaderField] = [
+    {"key": "port_of_loading", "label": "Port of Loading"},
+    {"key": "port_of_destination", "label": "Port of Destination"},
+    {
+        "key": "shipment_details",
+        "label": "Shipment Details",
+    },
+    {"key": "incoterms", "label": "Inco-Terms"},
+    {"key": "frequency", "label": "Frequency"},
+    {"key": "service", "label": "Service"},
+    {"key": "transit_time", "label": "Approximate Transit Time"},
+]
+
 
 def build_au_title(template_code: str, mode: str) -> str:
     mapping = {
@@ -29,16 +42,12 @@ def build_au_title(template_code: str, mode: str) -> str:
 
 
 AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
-    TemplateCode.IMP_LCL: {
+        TemplateCode.IMP_LCL: {
         "branch": Branch.AUSTRALIA,
         "title": build_au_title(TemplateCode.IMP_LCL, mode="Seafreight"),
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-            {"key": "validity_date", "label": "Validity Date"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS
+        + [{"key": "validity_date", "label": "Validity Date"}],
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -73,12 +82,8 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": build_au_title(TemplateCode.IMP_AIR, mode="Airfreight"),
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-            {"key": "validity_date", "label": "Validity Date"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS
+        + [{"key": "validity_date", "label": "Validity Date"}],
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -113,12 +118,8 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": build_au_title(TemplateCode.IMP_FCL, mode="Seafreight"),
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-            {"key": "validity_date", "label": "Validity Date"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS
+        + [{"key": "validity_date", "label": "Validity Date"}],
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -153,12 +154,8 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": build_au_title(TemplateCode.EXP_LCL, mode="Seafreight"),
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-            {"key": "validity_date", "label": "Validity Date"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS
+        + [{"key": "validity_date", "label": "Validity Date"}],
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -187,12 +184,8 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": build_au_title(TemplateCode.EXP_FCL, mode="Seafreight"),
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-            {"key": "validity_date", "label": "Validity Date"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS
+        + [{"key": "validity_date", "label": "Validity Date"}],
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -227,12 +220,8 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": build_au_title(TemplateCode.EXP_AIR, mode="Airfreight"),
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-            {"key": "validity_date", "label": "Validity Date"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS
+        + [{"key": "validity_date", "label": "Validity Date"}],
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -262,11 +251,7 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": "Agent Import FCL Charge",
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS,
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -290,11 +275,7 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": "Agent Import LCL DAP Charge",
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS,
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -318,11 +299,7 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": "Agent Export LCL EXW Charge",
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS,
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -350,11 +327,7 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": "Agent Export Air EXW Charge",
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS,
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},
@@ -383,11 +356,7 @@ AU_QUOTE_TEMPLATES: Dict[str, TemplateConfig] = {
         "branch": Branch.AUSTRALIA,
         "title": "Agent Export FCL Charge",
         "header_fields": COMMON_HEADER_FIELDS_AU
-        + [
-            {"key": "origin", "label": "Origin"},
-            {"key": "destination", "label": "Destination"},
-            {"key": "incoterm", "label": "Incoterm"},
-        ],
+        + COMMON_SHIPMENT_DETAILS_FIELDS,
         "charge_columns": [
             {"key": "description", "label": "Charge Item"},
             {"key": "currency", "label": "Currency"},

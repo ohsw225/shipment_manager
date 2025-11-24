@@ -55,6 +55,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "logistics_manager.wsgi.application"
+ASGI_APPLICATION = "logistics_manager.asgi.application"
 
 DATABASES = {
     "default": env.db(

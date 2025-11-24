@@ -1,0 +1,942 @@
+[
+  {
+    "template_name": "IMP LCL",
+    "header_info": {
+      "Customer": "",
+      "Attention To": "",
+      "Issue Date": "2024-03-01 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-03-31 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "",
+      "Port of Destination": "Melbourne",
+      "KG": "1230",
+      "CBM": "1.694",
+      "Shipment Details": "General Cargo - Non Hazardous",
+      "Inco-Terms": "",
+      "Frequency": "xxxx - Subject to Space & Equipment",
+      "Service": ""
+    },
+    "origin_charges": {
+      "Pick Up": {
+        "CUR": "USD",
+        "Base Rate": "69.5",
+        "Per Shipment": "",
+        "Total": "69.5",
+        "Exchange Rate": "1"
+      },
+      "CFS": {
+        "CUR": "USD",
+        "Base Rate": "15",
+        "Per CBM": "",
+        "Total": "25.41",
+        "Exchange Rate": "1"
+      },
+      "Document Fee": {
+        "CUR": "USD",
+        "Base Rate": "30",
+        "Per Shipment": "",
+        "Total": "30",
+        "Exchange Rate": "1"
+      }
+    },
+    "freight_charges": {
+      "Freight": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per CBM": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Low Sulphur Surcharge (Floating)": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per CBM": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "GRI (Floating)": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per CBM": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Emergency Bunker Surcharge (ASIA + Canada)": {
+        "CUR": "USD",
+        "Base Rate": "5",
+        "Per CBM": "",
+        "Total": "8.469999999999999",
+        "Exchange Rate": "0.7"
+      }
+    },
+    "destination_charges": {},
+    "other_charges": {}
+  },
+  {
+    "template_name": "IMP AIR",
+    "header_info": {
+      "Customer": "Velflex",
+      "Attention To": "Amy Vernon",
+      "Issue Date": "2024-05-02 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-05-15 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "JFK",
+      "Port of Destination": "Melbourne",
+      "KG": "",
+      "CBM": "",
+      "Shipment Details": "General Cargo - Non Hazardous",
+      "Inco-Terms": "",
+      "Frequency": "xxxx - Subject to Space & Equipment",
+      "Service": ""
+    },
+    "origin_charges": {
+      "Inland Cartage": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Shipment": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Security Fee": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Shipment": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Document Fee": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Shipment": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Export Clearance": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Shipment": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Handling Fee": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Shipment": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      }
+    },
+    "freight_charges": {
+      "Freight": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per Kg": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Fuel Surcharge": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per Kg": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Security Surcharge": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per Kg": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      }
+    },
+    "destination_charges": {
+      "Import Terminal Fee (Minimum $95.00)": {
+        "CUR": "AUD",
+        "Base Rate": "0.8",
+        "Per Kg": "",
+        "Total": "95",
+        "Exchange Rate": "1"
+      },
+      "Airline Terminal Service Fee (Minimum $80.00)": {
+        "CUR": "AUD",
+        "Base Rate": "0.25",
+        "Per Kg": "",
+        "Total": "80",
+        "Exchange Rate": "1"
+      },
+      "Import Documentation Processing Fee": {
+        "CUR": "AUD",
+        "Base Rate": "95",
+        "Per Shipment": "",
+        "Total": "95",
+        "Exchange Rate": "1"
+      },
+      "Customs Clearance/Professional Fees": {
+        "CUR": "AUD",
+        "Base Rate": "125",
+        "5 Tariff Lines": "",
+        "Total": "125",
+        "Exchange Rate": "1"
+      },
+      "Standard Cartage": {
+        "CUR": "AUD",
+        "Base Rate": "95",
+        "Per Shipment": "",
+        "Total": "95",
+        "Exchange Rate": "1"
+      }
+    },
+    "other_charges": {}
+  },
+  {
+    "template_name": "IMP FCL",
+    "header_info": {
+      "Customer": "",
+      "Attention To": "",
+      "Issue Date": "2024-03-01 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-03-31 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "",
+      "Port of Destination": "Melbourne",
+      "Inco-Terms": "",
+      "Frequency": "xxxx - Subject to Space & Equipment",
+      "Service": ""
+    },
+    "origin_charges": {
+      "Inland Cartage": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Container": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Security Fee": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Shipment": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Document Fee": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Shipment": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Export Clearance": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Shipment": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Handling Fee": {
+        "CUR": "",
+        "Base Rate": "",
+        "Per Shipment": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      }
+    },
+    "freight_charges": {
+      "Freight": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per Container": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Low Sulphur Surcharge (Floating)": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per Container": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "GRI (Floating)": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per Container": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Hazardous Surcharge (If Applicable)": {
+        "CUR": "USD",
+        "Base Rate": "200",
+        "Per Container": "",
+        "Total": "200",
+        "Exchange Rate": "0.7"
+      }
+    },
+    "destination_charges": {},
+    "other_charges": {}
+  },
+  {
+    "template_name": "EXP LCL",
+    "header_info": {
+      "Customer": "ASIA ATLANTIC LINENER CO.,LTD.",
+      "Attention To": "Pete",
+      "Issue Date": "2024-08-27 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-09-15 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "MEL",
+      "Port of Destination": "BKK",
+      "KG": "280",
+      "CBM": "1.1019999999999999",
+      "Shipment Details": "General Cargo - Non Hazardous\n50X38X29 CM X 20 PCS (14KG PER BOX)",
+      "Inco-Terms": "EXW",
+      "Service": "Direct Service"
+    },
+    "origin_charges": {
+      "Standard Cartage (Minimum $105.00)": {
+        "CUR": "AUD",
+        "Base Rate": "40",
+        "Per Shipment": "",
+        "Total": "105",
+        "Exchange Rate": "1.45"
+      },
+      "Fuel Surcharge (Floating)": {
+        "CUR": "AUD",
+        "Base Rate": "0.3",
+        "of Cartage Charge": "",
+        "Total": "31.5",
+        "Exchange Rate": "1.45"
+      },
+      "LCL Timeslot": {
+        "CUR": "AUD",
+        "Base Rate": "50",
+        "Per Shipment": "",
+        "Total": "50",
+        "Exchange Rate": "1.45"
+      },
+      "Export Clearance": {
+        "CUR": "AUD",
+        "Base Rate": "50",
+        "Per Shipment": "",
+        "Total": "50",
+        "Exchange Rate": "1.45"
+      },
+      "Export Documents": {
+        "CUR": "AUD",
+        "Base Rate": "100",
+        "Per Shipment": "",
+        "Total": "100",
+        "Exchange Rate": "1.45"
+      },
+      "VGM Handling Fee": {
+        "CUR": "AUD",
+        "Base Rate": "25",
+        "Per Shipment": "",
+        "Total": "25",
+        "Exchange Rate": "1.45"
+      }
+    },
+    "freight_charges": {
+      "Freight": {
+        "CUR": "USD",
+        "Base Rate": "75",
+        "Per CBM": "",
+        "Total": "82.64999999999999",
+        "Exchange Rate": "1"
+      },
+      "Low Sulphur": {
+        "CUR": "USD",
+        "Base Rate": "7.5",
+        "Per CBM": "",
+        "Total": "8.264999999999999",
+        "Exchange Rate": "1"
+      }
+    },
+    "destination_charges": {},
+    "other_charges": {}
+  },
+  {
+    "template_name": "EXP FCL",
+    "header_info": {
+      "Customer": "",
+      "Attention To": "",
+      "Issue Date": "2024-03-01 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-03-31 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "Melbourne",
+      "Port of Destination": "",
+      "Shipment Details": "General Cargo - Non Hazardous",
+      "Inco-Terms": "",
+      "Frequency": "xxxx - Subject to Space & Equipment",
+      "Service": ""
+    },
+    "origin_charges": {
+      "Standard / Side-Loader Cartage from *****": {
+        "CUR": "AUD",
+        "Base Rate": "500",
+        "Per Container": "",
+        "Total": "500",
+        "Exchange Rate": "1"
+      },
+      "Tolls": {
+        "CUR": "AUD",
+        "Base Rate": "",
+        "Per Container": "",
+        "Total": "0",
+        "Exchange Rate": "1"
+      },
+      "Fuel Surcharge (Floating)": {
+        "CUR": "AUD",
+        "Base Rate": "0.3",
+        "of Cartage Charge": "",
+        "Total": "150",
+        "Exchange Rate": "1"
+      },
+      "Side-Loader Wharf Access Fee": {
+        "CUR": "AUD",
+        "Base Rate": "95",
+        "Per Container": "",
+        "Total": "95",
+        "Exchange Rate": "1"
+      },
+      "FCL Booking Fee": {
+        "CUR": "AUD",
+        "Base Rate": "110",
+        "Per Container": "",
+        "Total": "110",
+        "Exchange Rate": "1"
+      },
+      "Empty Container Park Fee": {
+        "CUR": "AUD",
+        "Base Rate": "140",
+        "Per Container": "",
+        "Total": "140",
+        "Exchange Rate": "1"
+      },
+      "Chain of Responsibility Fee": {
+        "CUR": "AUD",
+        "Base Rate": "20",
+        "Per Container": "",
+        "Total": "20",
+        "Exchange Rate": "1"
+      },
+      "Infrastructure Fee": {
+        "CUR": "AUD",
+        "Base Rate": "245",
+        "Per Container": "",
+        "Total": "245",
+        "Exchange Rate": "1"
+      },
+      "Export Clearance": {
+        "CUR": "AUD",
+        "Base Rate": "50",
+        "Per Shipment": "",
+        "Total": "50",
+        "Exchange Rate": "1"
+      },
+      "Export Documents": {
+        "CUR": "AUD",
+        "Base Rate": "100",
+        "Per Shipment": "",
+        "Total": "100",
+        "Exchange Rate": "1"
+      },
+      "VGM Handling Fee (Method 2)": {
+        "CUR": "AUD",
+        "Base Rate": "15",
+        "Per Shipment": "",
+        "Total": "15",
+        "Exchange Rate": "1"
+      }
+    },
+    "freight_charges": {
+      "Freight": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per Container": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "Low Sulphur Surcharge (Floating)": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per Container": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      },
+      "GRI (Floating)": {
+        "CUR": "USD",
+        "Base Rate": "",
+        "Per Container": "",
+        "Total": "0",
+        "Exchange Rate": "0.7"
+      }
+    },
+    "destination_charges": {},
+    "other_charges": {}
+  },
+  {
+    "template_name": "EXP AIR",
+    "header_info": {
+      "Customer": "ASIA ATLANTIC LINENER CO.,LTD.",
+      "Attention To": "Pete",
+      "Issue Date": "2024-08-27 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-08-30 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "MEL",
+      "Port of Destination": "BKK",
+      "KG": "1.1019999999999999",
+      "CBM": "280",
+      "Shipment Details": "General Cargo - Non Hazardous\n50X38X29 CM X 20 PCS (14KG PER BOX)",
+      "Inco-Terms": "EXW",
+      "Service": "SQ // MEL-SIN-BKK"
+    },
+    "origin_charges": {
+      "Inland Cartage": {
+        "CUR": "AUD",
+        "Base Rate": "150",
+        "Per Shipment": "",
+        "Total": "150",
+        "Exchange Rate": "1.45"
+      },
+      "X-Ray Fee (Min. $25.00)": {
+        "CUR": "AUD",
+        "Base Rate": "0.2",
+        "Per Kg": "",
+        "Total": "56",
+        "Exchange Rate": "1.45"
+      },
+      "Airport Transfer Fee (Min. $30.00)": {
+        "CUR": "AUD",
+        "Base Rate": "0.15",
+        "Per Kg": "",
+        "Total": "42",
+        "Exchange Rate": "1.45"
+      },
+      "CTO Fee (Min. $35.00)": {
+        "CUR": "AUD",
+        "Base Rate": "0.25",
+        "Per Kg": "",
+        "Total": "70",
+        "Exchange Rate": "1.45"
+      },
+      "Security Maintenance Fee": {
+        "CUR": "AUD",
+        "Base Rate": "20",
+        "Per Shipment": "",
+        "Total": "20",
+        "Exchange Rate": "1.45"
+      },
+      "Export Documentation Fee": {
+        "CUR": "AUD",
+        "Base Rate": "100",
+        "Per Shipment": "",
+        "Total": "100",
+        "Exchange Rate": "1.45"
+      },
+      "Export Clearance Fee": {
+        "CUR": "AUD",
+        "Base Rate": "50",
+        "Per Shipment": "",
+        "Total": "50",
+        "Exchange Rate": "1.45"
+      },
+      "AWB Fee": {
+        "CUR": "AUD",
+        "Base Rate": "45",
+        "Per Shipment": "",
+        "Total": "45",
+        "Exchange Rate": "1.45"
+      }
+    },
+    "freight_charges": {
+      "Freight": {
+        "CUR": "AUD",
+        "Base Rate": "1.85",
+        "Per Kg": "",
+        "Total": "518",
+        "Exchange Rate": "1.45"
+      }
+    },
+    "destination_charges": {},
+    "other_charges": {}
+  },
+  {
+    "template_name": "AGENT EXP FCL",
+    "header_info": {
+      "Customer": "",
+      "Attention To": "",
+      "Issue Date": "2024-03-01 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-03-31 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "Melbourne",
+      "Port of Destination": "",
+      "Shipment Details": "General Cargo - Non Hazardous",
+      "Inco-Terms": "",
+      "Frequency": "xxxx - Subject to Space & Equipment",
+      "Service": ""
+    },
+    "origin_charges": {
+      "Standard Trailer Cartage  from *****": {
+        "CUR": "AUD",
+        "20'": "556",
+        "40'": "613",
+        "NOTE": "Per Container"
+      },
+      "Side-Loader Cartage from *****": {
+        "CUR": "AUD",
+        "20'": "624",
+        "40'": "671",
+        "NOTE": "Per Container"
+      },
+      "Tolls": {
+        "CUR": "AUD",
+        "20'": "80",
+        "40'": "80",
+        "NOTE": "Per Container"
+      },
+      "Fuel Surcharge (Floating)": {
+        "CUR": "AUD",
+        "20'": "0.3",
+        "40'": "0.3",
+        "NOTE": "Of Cartage Rate"
+      },
+      "Side-Loader Wharf Access Fee": {
+        "CUR": "AUD",
+        "20'": "95",
+        "40'": "95",
+        "NOTE": "Per Container"
+      },
+      "FCL Booking Fee": {
+        "CUR": "AUD",
+        "20'": "110",
+        "40'": "110",
+        "NOTE": "Per Container"
+      },
+      "Empty Container Park Fee": {
+        "CUR": "AUD",
+        "20'": "140",
+        "40'": "140",
+        "NOTE": "Per Container"
+      },
+      "Chain of Responsibility Fee": {
+        "CUR": "AUD",
+        "20'": "20",
+        "40'": "20",
+        "NOTE": "Per Container"
+      },
+      "Infrastructure Fee": {
+        "CUR": "AUD",
+        "20'": "245",
+        "40'": "245",
+        "NOTE": "Per Container"
+      },
+      "Export Clearance": {
+        "CUR": "AUD",
+        "20'": "50",
+        "40'": "50",
+        "NOTE": "Per Shipment"
+      },
+      "Export Documents": {
+        "CUR": "AUD",
+        "20'": "100",
+        "40'": "100",
+        "NOTE": "Per Shipment"
+      },
+      "VGM Handling Fee (Method 2)": {
+        "CUR": "AUD",
+        "20'": "15",
+        "40'": "15",
+        "NOTE": "Per Shipment"
+      }
+    },
+    "freight_charges": {
+      "Freight": {
+        "CUR": "USD",
+        "20'": "450",
+        "40'": "950",
+        "NOTE": "Per Container"
+      },
+      "Low Sulphur Surcharge (Floating)": {
+        "CUR": "USD",
+        "20'": "",
+        "40'": "",
+        "NOTE": "Per Container"
+      },
+      "GRI (Floating)": {
+        "CUR": "USD",
+        "20'": "",
+        "40'": "",
+        "NOTE": "Per Container"
+      }
+    },
+    "destination_charges": {},
+    "other_charges": {}
+  },
+  {
+    "template_name": "AGENT IMP FCL",
+    "header_info": {
+      "Customer": "",
+      "Attention To": "",
+      "Issue Date": "2024-03-01 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-03-31 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "",
+      "Port of Destination": "Melbourne",
+      "Shipment Details": "General Cargo - Non Hazardous",
+      "Inco-Terms": "",
+      "Frequency": "xxxx - Subject to Space & Equipment",
+      "Service": ""
+    },
+    "origin_charges": {},
+    "freight_charges": {},
+    "destination_charges": {},
+    "other_charges": {}
+  },
+  {
+    "template_name": "AGENT IMP LCL DAP CHARGE",
+    "header_info": {
+      "Customer": "",
+      "Attention To": "",
+      "Issue Date": "2024-03-01 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-03-31 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "",
+      "Port of Destination": "Melbourne",
+      "KG": "",
+      "CBM": "",
+      "Shipment Details": "General Cargo - Non Hazardous",
+      "Inco-Terms": "",
+      "Frequency": "xxxx - Subject to Space & Equipment",
+      "Service": ""
+    },
+    "origin_charges": {},
+    "freight_charges": {},
+    "destination_charges": {
+      "Destination Terminal Handling Charge": {
+        "CUR": "AUD",
+        "Base Rate": "AT COST",
+        "As Per Co-Loader's Charge": ""
+      },
+      "Delivery Order": {
+        "CUR": "AUD",
+        "Base Rate": "80",
+        "Per Shipment": ""
+      },
+      "Import Documentation Processing Fee": {
+        "CUR": "AUD",
+        "Base Rate": "95",
+        "Per Shipment": ""
+      },
+      "Customs Clearance/Professional Fees": {
+        "CUR": "AUD",
+        "Base Rate": "100",
+        "Per Shipment": ""
+      },
+      "Tailgate Delivery to Brighton, VIC 3187": {
+        "CUR": "AUD",
+        "Base Rate": "115",
+        "Per Hour (Min. 2 Hours)": ""
+      },
+      "Tolls": {
+        "CUR": "AUD",
+        "Base Rate": "9",
+        "Per Shipment": ""
+      },
+      "Fuel Surcharge (Floating)": {
+        "CUR": "AUD",
+        "Base Rate": "0.3",
+        "of Cartage Charge": ""
+      },
+      "LCL Timeslot Booking Fee": {
+        "CUR": "AUD",
+        "Base Rate": "22.5",
+        "Per Shipment": ""
+      }
+    },
+    "other_charges": {}
+  },
+  {
+    "template_name": "AGENT EXP LCL EXW CHARGE",
+    "header_info": {
+      "Customer": "",
+      "Attention To": "",
+      "Issue Date": "2024-03-01 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-03-31 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "Fremantle",
+      "Port of Destination": "Damman",
+      "KG": "1060",
+      "CBM": "2.6730000000000005",
+      "Shipment Details": "General Cargo - Non Hazardous",
+      "Inco-Terms": "EXW",
+      "Frequency": "Weekly - Subject to Space & Equipment",
+      "Service": "via Singapore"
+    },
+    "origin_charges": {
+      "Standard Cartage from Bentley, WA 6102": {
+        "CUR": "AUD",
+        "Base Rate": "150",
+        "Per Shipment": ""
+      },
+      "Fuel Surcharge (Floating)": {
+        "CUR": "AUD",
+        "Base Rate": "0.3",
+        "of Cartage Charge": ""
+      },
+      "LCL Timeslot Booking Fee": {
+        "CUR": "AUD",
+        "Base Rate": "40",
+        "Per Shipment": ""
+      },
+      "Export Clearance": {
+        "CUR": "AUD",
+        "Base Rate": "50",
+        "Per Shipment": ""
+      },
+      "Export Documents": {
+        "CUR": "AUD",
+        "Base Rate": "100",
+        "Per Shipment": ""
+      },
+      "VGM Handling Fee": {
+        "CUR": "AUD",
+        "Base Rate": "20",
+        "Per Hour (Min. 2 Hours)": ""
+      },
+      "CAF": {
+        "CUR": "AUD",
+        "Base Rate": "6",
+        "Per CBM": ""
+      },
+      "Port Infrastructure Fee (Minimum 1 CBM)": {
+        "CUR": "AUD",
+        "Base Rate": "15",
+        "Per CBM": ""
+      }
+    },
+    "freight_charges": {
+      "Freight": {
+        "CUR": "USD",
+        "Base Rate": "205",
+        "Per CBM": ""
+      }
+    },
+    "destination_charges": {},
+    "other_charges": {}
+  },
+  {
+    "template_name": "AGENT EXP AIR EXW CHARGE",
+    "header_info": {
+      "Customer": "Apeiron International",
+      "Attention To": "Zhanar Shangereyeva",
+      "Issue Date": "2024-09-24 00:00:00",
+      "Issued By": "Samuel Shin",
+      "Expiry date": "2024-10-15 00:00:00"
+    },
+    "shipment_details": {
+      "Port of Loading": "Melbourne",
+      "Port of Destination": "Almaty",
+      "Shipment Details": "General Cargo - Non Hazardous",
+      "Inco-Terms": "EXW",
+      "Service": "D7"
+    },
+    "origin_charges": {
+      "Inland Cartage": {
+        "CUR": "USD",
+        "Base Rate": "170",
+        "Per Shipment": ""
+      },
+      "X-Ray Fee (Min. $35.00)": {
+        "CUR": "USD",
+        "Base Rate": "0.15",
+        "Per Kg": ""
+      },
+      "Airport Transfer Fee (Min. $30.00)": {
+        "CUR": "USD",
+        "Base Rate": "0.1",
+        "Per Kg": ""
+      },
+      "CTO Fee (Min. $35.00)": {
+        "CUR": "USD",
+        "Base Rate": "0.2",
+        "Per Kg": ""
+      },
+      "Security Maintenance Fee": {
+        "CUR": "USD",
+        "Base Rate": "15",
+        "Per Shipment": ""
+      },
+      "Export Documentation Fee": {
+        "CUR": "USD",
+        "Base Rate": "70",
+        "Per Shipment": ""
+      },
+      "Export Clearance Fee": {
+        "CUR": "USD",
+        "Base Rate": "35",
+        "Per Shipment": ""
+      },
+      "AWB Fee": {
+        "CUR": "USD",
+        "Base Rate": "30",
+        "Per Shipment": ""
+      }
+    },
+    "freight_charges": {
+      "Minimum": {
+        "CUR": "AUD",
+        "Freight": "350",
+        "Fuel": "Incl."
+      },
+      "-45 Kg": {
+        "CUR": "AUD",
+        "Freight": "7.7",
+        "Fuel": "Incl."
+      },
+      "+45 Kg": {
+        "CUR": "AUD",
+        "Freight": "7.55",
+        "Fuel": "Incl."
+      },
+      "+100 Kg": {
+        "CUR": "AUD",
+        "Freight": "6.95",
+        "Fuel": "Incl."
+      },
+      "+300 Kg": {
+        "CUR": "AUD",
+        "Freight": "6.65",
+        "Fuel": "Incl."
+      },
+      "+500 Kg": {
+        "CUR": "AUD",
+        "Freight": "6.35",
+        "Fuel": "Incl."
+      },
+      "+1000 Kg": {
+        "CUR": "AUD",
+        "Freight": "6.25",
+        "Fuel": "Incl."
+      }
+    },
+    "destination_charges": {},
+    "other_charges": {}
+  }
+]

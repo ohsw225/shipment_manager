@@ -4,14 +4,13 @@ Internal Django web app for managing quotes and shipments across Korea (KR) and 
 
 ## Current Status
 - Django project structure created with apps: `core`, `shipments`, `quotes`.
-- Settings split: `logistics_manager/settings/base.py`, `local.py`, `prod.py` using `django-environ` with SQLite default; media/static roots configured.
+- Settings split: `logistics_manager/settings/base.py`, `local.py`, `prod.py` using `django-environ` with SQLite default; media/static roots configured. Env loading reads `.env` (not committed); `.env.example` provided.
 - URL wiring in `logistics_manager/urls.py` pointing to placeholder views in `shipments.views` and `quotes.views`; auth URLs included.
 - Tooling configured via `pyproject.toml` (black, isort, ruff, mypy, pytest) and `.pre-commit-config.yaml`.
 - Dependencies listed in `requirements.in` and `requirements-dev.in`; no virtualenv or installs yet.
 - Core domain enums/constants added (`core/choices.py`, `constants.py`, `permissions.py`, `utils.py`).
-- `Shipment` model scaffolded with branch/status/template, quote JSON/PDF fields, and owner references (no migrations run yet).
-- AU quote template configs defined for 11 templates (IMP LCL/AIR/FCL, EXP LCL/FCL/AIR, AGENT IMP FCL, AGENT IMP LCL DAP Charge, AGENT EXP LCL EXW Charge, AGENT EXP AIR EXW Charge, AGENT EXP FCL) with per-template charge sections and shared shipment detail headers (port of loading/destination, shipment details text, incoterms, frequency, transit time); KR configs empty for now. Registry is in `quotes/registry.py`.
-- Untracked file present: `data.json` (contents/intent unknown).
+- `Shipment` model scaffolded with branch/status/template, quote JSON/PDF fields, and owner references; initial migration added.
+- AU quote templates for 11 codes (IMP LCL/AIR/FCL, EXP LCL/FCL/AIR, AGENT IMP FCL, AGENT IMP LCL DAP Charge, AGENT EXP LCL EXW Charge, AGENT EXP AIR EXW Charge, AGENT EXP FCL) are now generated from the root `data.json` definitions (fields/sections/columns); KR configs remain empty. Registry is in `quotes/registry.py`.
 
 ## Getting Started (fresh clone)
 1. Create virtualenv (Python 3.12) and install deps:
@@ -20,8 +19,8 @@ Internal Django web app for managing quotes and shipments across Korea (KR) and 
    source .venv/bin/activate
    pip install -r requirements-dev.in
    ```
-2. Copy `.env.example` (not yet present) to `.env` and set `SECRET_KEY`, `DATABASE_URL` (or use default SQLite), `DEBUG`, `ALLOWED_HOSTS`.
-3. Run migrations after models are added:
+2. Copy `.env.example` to `.env` (do not commit) and set `SECRET_KEY`, `DATABASE_URL` (or use default SQLite), `DEBUG`, `ALLOWED_HOSTS`.
+3. Run migrations:
    ```bash
    python logistics_manager/manage.py migrate
    ```
@@ -31,8 +30,7 @@ Internal Django web app for managing quotes and shipments across Korea (KR) and 
    ```
 
 ## Next Steps
-- Add `.env.example` with baseline settings.
-- Decide DB (Postgres recommended) and run initial migrations when ready.
+- Decide DB (Postgres recommended) and run migrations against it if not using SQLite.
 - Implement dynamic quote forms and JSON helpers in `quotes/forms.py`; add PDF renderer `quotes/pdf.py`.
 - Build quote create/edit/regenerate views using `TemplateRegistry`, and shipments list/dashboard views with permissions and filters.
 - Add templates (`base.html`, dashboard, shipments lists, quote select/form) reflecting branches and template choices.
